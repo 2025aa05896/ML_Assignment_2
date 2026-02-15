@@ -73,8 +73,8 @@ def load_artifacts() -> tuple[dict, pd.DataFrame, pd.DataFrame]:
 
 
 def main() -> None:
-    st.set_page_config(page_title="ML Assignment 2 - Classifier Demo", layout="wide")
-    st.title("Machine Learning Assignment 2 - Classification Model Demo")
+    st.set_page_config(page_title="ML Assignment 2 - Classifier", layout="wide")
+    st.title("Machine Learning Assignment 2 - Classification Model")
 
     metadata, metrics_df, default_test_df = load_artifacts()
     model_registry = metadata["model_registry"]
