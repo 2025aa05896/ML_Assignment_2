@@ -33,12 +33,12 @@ Build an end-to-end multi-class classification workflow on a Kaggle dataset usin
 
 | ML Model Name | Observation about model performance |
 |---|---|
-| Logistic Regression | Good baseline with balanced weighted scores, but underperforms tree ensembles on non-linear fault boundaries. |
-| Decision Tree | Interpretable and reasonably strong recall, but single-tree variance limits overall generalization. |
-| kNN | Comparable to Decision Tree, but performance is sensitive to local geometry and class imbalance. |
-| Naive Bayes | Fastest model but weakest quality due to strong independence assumptions not fitting this dataset. |
-| Random Forest (Ensemble) | Strong robust performance with high AUC and stable class-wise behavior across fault types. |
-| XGBoost (Ensemble) | Best overall performer (highest Accuracy, AUC, F1, MCC), capturing complex feature interactions effectively. |
+| Logistic Regression | This model give a good baseline, but it not catch complex patterns very well. |
+| Decision Tree | Decision tree is easy to understand, but sometime it overfit and result can change a lot. |
+| kNN | kNN works okay on this data, but it become sensitive when nearby points are noisy. |
+| Naive Bayes | Naive Bayes run very fast, but assumptions are too simple so performance is low. |
+| Random Forest (Ensemble) | Random forest perform strong and stable, and it handle non linear relation better. |
+| XGBoost (Ensemble) | XGBoost gives best overall result, but tuning is little difficult and training take more time. |
 
 ## Repository structure
 
@@ -105,4 +105,4 @@ streamlit run app.py
 ## Required links (fill before final submission PDF)
 - GitHub Repository: `https://github.com/2025aa05896/ML_Assignment_2`
 - Streamlit App: `https://mlassignment2-hu8nyurwpukpaygtruuqna.streamlit.app`
-- BITS Lab screenshot: `<attach in submission PDF>`
+- BITS Lab screenshot: `Included in ML_Assignment_2_Submission.pdf (Screenshot (690).png)`
