@@ -103,6 +103,6 @@ streamlit run app.py
 - Classification report
 
 ## Required links (fill before final submission PDF)
-- GitHub Repository: `<add-your-github-link>`
+- GitHub Repository: `https://github.com/2025aa05896/ML_Assignment_2`
 - Streamlit App: `<add-your-streamlit-cloud-link>`
 - BITS Lab screenshot: `<attach in submission PDF>`
