@@ -148,9 +148,12 @@ def main() -> None:
         y_pred = model.predict(X_eval)
 
         result_df = eval_df.copy()
-        result_df["prediction"] = y_pred
+        pred_series = pd.Series(y_pred, index=result_df.index)
+        result_df["prediction"] = pred_series
         if id_to_name:
-            result_df["prediction_label"] = pd.Series(y_pred).map(id_to_name).fillna(y_pred)
+            mapped_labels = pred_series.map(id_to_name)
+            # Avoid array-like fillna values, which can fail on newer pandas versions.
+            result_df["prediction_label"] = mapped_labels.combine_first(pred_series.astype(str))
         st.write("Sample predictions")
         st.dataframe(result_df.head(20), width="stretch")
 
