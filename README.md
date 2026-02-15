@@ -104,5 +104,5 @@ streamlit run app.py
 
 ## Required links (fill before final submission PDF)
 - GitHub Repository: `https://github.com/2025aa05896/ML_Assignment_2`
-- Streamlit App: `<add-your-streamlit-cloud-link>`
+- Streamlit App: `https://mlassignment2-hu8nyurwpukpaygtruuqna.streamlit.app`
 - BITS Lab screenshot: `<attach in submission PDF>`
